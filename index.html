@@ -1,1 +1,34 @@
-git 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-sketch-online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="buttons">
+        <button class="color-choice" data-color="black" type="button" style="border: 1px solid olive;">Black</button>
+        <button class="color-choice" data-color="rainbow" type="button" style="border: 1px solid olive;">Rainbow</button>
+        <button class="color-choice" data-color="gray" type="button" style="border: 1px solid olive;">Gray Scale</button>
+        <button class="color-choice" data-color="eraser" type="button" style="border: 1px solid olive;">Eraser</button>
+        <button class="color-choice" style="border: 1px solid olive;">Pick: <input type="color" value="#ff0000" id="input-color"></button>
+    </div>
+
+    <div class="grid-wrapper">
+        <div class="grid"></div>
+    </div>
+
+    <div class="grid-options">
+        <button class="clear" type="button" style="border: 1px solid olive;">Clear</button>
+        <div class="size-container">
+            <p>Pixel Size</p>
+            <input type="range" min="4" max="100" value="15" id="sizeRange" class="slider">
+            <p>Smallest ===> Largest</p>
+        </div>
+    </div>
+    <script src="logic.js"></script>
+</body>
+</html>
