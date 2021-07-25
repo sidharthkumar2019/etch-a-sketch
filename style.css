@@ -1,3 +1,10 @@
+* {
+  font-size: 15;
+  color: olive; 
+  font-family: 'Yellowtail', cursive;
+ }
+ 
+
 body {
   background-color: black;
   display: flex;
